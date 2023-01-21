@@ -1,4 +1,5 @@
 <?php 
+session_start();
 include 'Conexao.php';
 
 $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
@@ -22,6 +23,9 @@ if(isset($dados))
         {
             $_SESSION['msg'] = "Campo email mal preenchido";
             header('Location:views/viewCadastro.php');
+        }elseif(($dados['confirmar']) != ($dados['passe'])){
+            $_SESSION['msg'] = "Palavras passes diferentes";
+            header('Location:views/viewCadastro.php');
         }else{
             $passe = password_hash($dados['passe'],PASSWORD_DEFAULT);
 
@@ -32,8 +36,7 @@ if(isset($dados))
             $prepare->bindValue(':passe',$passe);
 
             if($prepare->execute())
-            {
-                
+            { 
                 header('Location:views/home.php');
             }
         }

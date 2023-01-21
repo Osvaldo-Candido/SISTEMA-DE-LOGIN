@@ -1,0 +1,221 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../img/keyboard_backlight_red_136083_1280x720.jpg');
+    background-size: cover;
+}
+
+.form-login{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    max-width: 400px;
+    padding: 30px;
+    background: #fafbfc;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    position: relative;
+}
+.full-box{
+    flex: 1 1 100%;
+    position: relative;
+}
+.form-login .lab, .form-login .inp-l {
+    display: block;
+    width: 100%;
+}
+
+.form-login .inp-l{
+    padding: 0px;
+    font-weight: bold;
+    font-size: .9em;
+    border:none;
+    border-bottom: 2px solid #24292F;
+    margin-bottom: 40px;
+    background-color: #fafbfc;
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.inp-l:focus {
+    outline: none;
+    border-bottom: 2px solid #007ACC;
+   
+}
+
+.form-login .inp-l[type="submit"]{
+    background: #007ACC;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    border: none;
+    margin-bottom: 10px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.form-login .inp-l[type="submit"]:hover{
+    background: #183C5C;
+}
+
+a {
+    color: #007ACC;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.img-usuario{
+    position: absolute;
+    background: #007ACC;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: -30px;
+    left: 154px;
+    display: flex;
+}
+.img-usuario img {
+    justify-content: center;
+    align-items: center;
+}
+.form-login .lab {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+   
+}
+
+.form-login h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size:2em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    color: #1E1E1E;
+}
+/*Esterliuzando o form cadastro*/
+.container-cad{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    max-width: 400px;
+    background: #fafbfc;
+    border-radius: 10px;
+    padding: 25px;
+}
+.form-cadastro {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.form-cadastro .inp-lb, 
+.form-cadastro .inp-c {
+    display: block;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+.form-cadastro .inp-lb{
+    padding: 10px;
+    font-weight: bold;
+}
+.form-cadastro .inp-c{
+    border: none;
+    border-bottom: 2px solid #323232;
+    margin-bottom: 40px;
+    padding-bottom: 6px;
+    background: #fafbfc;
+}
+.form-cadastro .inp-c:focus {
+    outline: none;
+    border-bottom: 2px solid #007ACC;
+}
+.form-cadastro .inp-c[type="submit"]{
+    background: #007ACC;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    transition: .5s ease-in-out;
+}
+.form-cadastro .inp-c[type="submit"]:hover{
+    background: #183C5C;
+    cursor: pointer;
+}
+h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4em;
+    color: 323232;
+}
+.link-login {
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.link-cadastro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #007ACC;
+}
+.link-cadastro .cadastro + .cadastro {
+    margin-left: 10px;
+}
+.link-redes ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.link-redes li {
+    list-style: none;
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+}
+
+.link-redes li:hover{
+    background: rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+.link-redes h4 {
+    color: #007ACC;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.texto-login {
+    margin-top: 20px;
+    color: #323232;
+    text-align: center;
+}
+.texto-login h2 {
+   margin-left: 10px;
+}
+.texto-login h4 {
+   color: #A60707;
+   border-radius: 6px;
+ }
